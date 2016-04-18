@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transiton</title>
+	<style type="text/css">
+	body{width:1000px;margin:0 auto;}
+	.bar p{
+		width: 100px;
+		height: 50px;
+		background: blue;		 
+	}
+	.bar p.bar-linear{-webkit-transition:width 2s linear;}
+	.bar p.bar-ease{-webkit-transition:width 2s ease;}
+	.bar p.bar-ease-in{-webkit-transition:width 2s ease-in;}
+	.bar p.bar-ease-out{-webkit-transition:width 2s ease-out;}
+	.bar p.bar-ease-in-out{-webkit-transition:width 2s ease-in-out;}
+	.bar p:hover{
+		width: 1000px;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="bar">
+			<h2>linear规定以相同速度开始至结束的过渡效果</h2>
+			<p class="bar-linear"></p>
+		</div>
+		<div class="bar">
+			<h2>ease规定慢速开始，然后变快，然后慢速结束的过渡效果</h2>
+			<p class="bar-ease"></p>
+		</div>
+		<div class="bar">
+			<h2>ease-in规定以慢速开始的过渡效果</h2>
+			<p class="bar-ease-in"></p>
+		</div>
+		<div class="bar">
+			<h2>ease-out规定以慢速结束的过渡效果</h2>
+			<p class="bar-ease-out"></p>
+		</div>
+		<div class="bar">
+			<h2>ease-in-out规定以慢速开始和结束的过渡效果</h2>
+			<p class="bar-ease-in-out"></p>
+		</div>
+	</div>
+
+	
+</body>
+</html>
